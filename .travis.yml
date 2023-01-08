@@ -21,8 +21,8 @@ before_script: # 스크립트 실행전
   - ./gradlew clean build # jar 생성
 
 script:
+  - ./gradlew test # 테스트 실행
   - docker build -t jukim1124/spring-test . # 이미지 생성
-  - docker run -e CI=true jukim1124/spring-test ./gradlew test # 테스트 실행
 
 after_script:
   - echo "end Script"
