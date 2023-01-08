@@ -15,10 +15,14 @@ cache: # 같은 의존성은 다음 배포 때부터 안 받는다.
     - '$HOME/.m2/repository'
     - '$HOME/.gradle'
 
-before_install: # 스크립트 실행전
-  - echo "start Creating an image with dockerfile"
+before_script: # 스크립트 실행전
+  - echo "Start Script"
+  - echo "Start creating an image with dockerfile"
   - ./gradlew clean build # jar 생성
 
 script:
   - docker build -t jukim1124/spring-test . # 이미지 생성
-  - docker run -e CI=true jukim1124/spring-test ./gradlew test -- --coverage  # 테스트 실행
+  - docker run -e CI=true jukim1124/spring-test ./gradlew test # 테스트 실행
+
+after_script:
+  - echo "end Script"
