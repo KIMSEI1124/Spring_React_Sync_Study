@@ -27,10 +27,10 @@ script:
 after_script:
   - echo "end Script"
 
-before_deploy:
-  - zip -r ci
-  - mkdir -p deploy
-  - mv ci.zip deploy/ci.zip
+#before_deploy:
+#  - zip -r ci
+#  - mkdir -p deploy
+#  - mv ci.zip deploy/ci.zip
 
 deploy:
   edge: true
@@ -40,7 +40,7 @@ deploy:
   env: DockerReactApp-env
   bucket_name: elasticbeanstalk-ap-northeast-2-606492404586
   bucket_path: docker-react-app
-  local_dir: deploy
+#  local_dir: deploy
   on:
     branch: main
   access_key_id: $AWS_ACCESS_KEY
