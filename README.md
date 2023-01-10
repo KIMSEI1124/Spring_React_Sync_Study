@@ -113,5 +113,5 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 
 ---
 
-[u-nij "Spring Boot + React.js 개발환경"](https://velog.io/@u-nij/Spring-Boot-React.
-js-%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD-%EC%84%B8%ED%8C%85)
+[u-nij "Spring Boot + React.js 개발환경"](https://velog.io/@u-nij/Spring-Boot-React.js-%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD-%EC%84%B8%ED%8C%85)
+[kh6198 "Spring boot + react 환경셋팅"](https://velog.io/@kh6197/spring-boot-react-%ED%99%98%EA%B2%BD%EC%85%8B%ED%8C%85)

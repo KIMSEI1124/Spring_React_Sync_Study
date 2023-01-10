@@ -15,8 +15,10 @@ public class SecurityConfig {
     protected SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                .antMatchers("/api/hello").permitAll()
+                .antMatchers("/api/*").permitAll()
                 .anyRequest().authenticated();
+        http
+                .formLogin();
 
         return http.build();
     }
