@@ -1,13 +1,13 @@
-package com.study.sync;
+package com.sync.study;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SyncApplication {
+public class StudyApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SyncApplication.class, args);
+		SpringApplication.run(StudyApplication.class, args);
 	}
 
 }

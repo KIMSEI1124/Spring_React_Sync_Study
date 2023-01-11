@@ -1,10 +1,10 @@
-package com.study.sync;
+package com.sync.study;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SyncApplicationTests {
+class StudyApplicationTests {
 
 	@Test
 	void contextLoads() {
