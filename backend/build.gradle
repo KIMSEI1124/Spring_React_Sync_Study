@@ -2,7 +2,7 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '2.7.7'
     id 'io.spring.dependency-management' version '1.0.15.RELEASE'
-    id "org.sonarqube" version "3.4.0.2513"
+    id "org.sonarqube" version "3.5.0.2730"
 }
 
 group = 'com.sync'
@@ -36,10 +36,8 @@ tasks.named('test') {
 sonarqube {
     properties {
         property "sonar.projectKey", "study"
-        property "sonar.host.url", "http://127.0.0.1:9000"
-        property "sonar.login", "sqp_168148b996cb7b99f200d08695543e6758bc179b"  // sonarqube token
-//        property "sonar.profile", "Sonar way"
-//        property "sonar.sourceEncoding", "UTF-8"
+        property "sonar.host.url", "http://172.17.0.2:9000"
+        property "sonar.login", "sqp_48be3af119309a0e2c4615d58c3eaa278d0a5ff2"  // sonarqube token
     }
 }
 /* SonarQube End */
