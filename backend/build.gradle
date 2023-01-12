@@ -35,9 +35,9 @@ tasks.named('test') {
 /* SonarQube Start */
 sonarqube {
     properties {
-        property "sonar.host.url", "http://127.0.0.1:9000"
-        property "sonar.login", "sqp_3cbe9a077d6c43041aceb380c7d65619109ccb82"  // sonarqube token
         property "sonar.projectKey", "study"
+        property "sonar.host.url", "http://127.0.0.1:9000"
+        property "sonar.login", "sqp_168148b996cb7b99f200d08695543e6758bc179b"  // sonarqube token
 //        property "sonar.profile", "Sonar way"
 //        property "sonar.sourceEncoding", "UTF-8"
     }
