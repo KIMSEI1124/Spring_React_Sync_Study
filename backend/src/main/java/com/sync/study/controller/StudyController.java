@@ -17,12 +17,12 @@ public class StudyController {
     }
 
 
-    @GetMapping("/api/data")
+    @GetMapping("/api/data1")
     public String data() {
         return "Hello, React";
     }
 
-    @GetMapping("/person")
+    @GetMapping("/api/data")
     public String getPerson() {
         Person person = personRepository.findAll().get(0);
         return person.getName();
