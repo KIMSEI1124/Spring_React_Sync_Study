@@ -23,7 +23,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     compileOnly 'org.projectlombok:lombok'
-//    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.28'
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.28'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
@@ -36,8 +36,8 @@ tasks.named('test') {
 sonarqube {
     properties {
         property "sonar.projectKey", "study"
-        property "sonar.host.url", "http://172.17.0.2:9000"
-        property "sonar.login", "sqp_48be3af119309a0e2c4615d58c3eaa278d0a5ff2"  // sonarqube token
+        property "sonar.host.url", "http://localhost:9000"
+        property "sonar.login", "sqp_3a6ba6d2c52e6b7de6c4644689703d63f2a6f9b4"  // sonarqube token
     }
 }
 /* SonarQube End */
