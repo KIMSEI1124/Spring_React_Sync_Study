@@ -18,9 +18,4 @@ public class Person {
     @GeneratedValue
     private Long id;
     private String name;
-
-    @Builder
-    public Person(String name) {
-        this.name = name;
-    }
 }
